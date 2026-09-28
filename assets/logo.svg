@@ -1,30 +1,39 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 130" width="520" height="130">
   <defs>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&amp;family=Montserrat:wght@400;500;600&amp;display=swap');
-      .gold-frame { stroke: #C9A03F; stroke-width: 1.5; fill: none; }
-      .blue-frame { stroke: rgba(255, 255, 255, 0.4); stroke-width: 1.5; fill: none; }
-      .mono-text { font-family: 'Cinzel', Georgia, serif; font-size: 52px; font-weight: 600; fill: #FFFFFF; }
-      .brand-title { font-family: 'Cinzel', Georgia, serif; font-size: 21px; font-weight: 700; fill: #FFFFFF; letter-spacing: 2.5px; }
-      .brand-sub { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 500; fill: #C9A03F; letter-spacing: 3.5px; text-transform: uppercase; }
+      .mono-j   { font-family: 'Cormorant Garamond', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif; font-weight: 400; fill: #FFFFFF; font-size: 54px; }
+      .mono-amp { font-family: 'Cormorant Garamond', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif; font-weight: 400; fill: #FFFFFF; font-size: 24px; }
+      .mono-r   { font-family: 'Cormorant Garamond', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif; font-weight: 400; fill: #FFFFFF; font-size: 54px; }
+      .brand-title { font-family: 'Cinzel', 'Trajan Pro', 'Palatino Linotype', Georgia, serif; font-size: 19px; font-weight: 600; fill: #FFFFFF; letter-spacing: 3.5px; }
+      .brand-sub   { font-family: 'Cinzel', 'Trajan Pro', 'Palatino Linotype', Georgia, serif; font-size: 7px;  font-weight: 400; fill: rgba(220,210,190,0.9); letter-spacing: 2.5px; }
     </style>
   </defs>
 
-  <!-- Monograma J&R com moldura dupla deslocada (Identidade do Manual J&R) -->
-  <g transform="translate(10, 10)">
-    <!-- Moldura Dourada Deslocada -->
-    <rect x="0" y="0" width="100" height="100" class="gold-frame" />
-    <!-- Moldura Interna -->
-    <rect x="12" y="12" width="100" height="100" class="blue-frame" />
-    <!-- Texto J & R (aumentado para maior destaque) -->
-    <text x="62" y="77" text-anchor="middle" class="mono-text">J &amp; R</text>
-  </g>
+  <!-- ═══ BLOCO DO MONOGRAMA ═══ -->
 
-  <!-- Tipografia da Marca -->
-  <g transform="translate(145, 25)">
-    <!-- Nome de cima (reduzido de 26px para 21px) -->
+  <!-- Fundo azul-marinho sólido no bloco inteiro (garante contraste em qualquer fundo) -->
+  <rect x="4" y="4" width="116" height="122" fill="#0B1630" rx="0"/>
+
+  <!-- Canto dourado L — superior esquerdo -->
+  <polyline points="6,38 6,6 44,6" stroke="#D4AC2A" stroke-width="2.5" fill="none" stroke-linecap="square"/>
+  <!-- Canto dourado L — inferior direito -->
+  <polyline points="80,121 118,121 118,83" stroke="#D4AC2A" stroke-width="2.5" fill="none" stroke-linecap="square"/>
+
+  <!-- Quadrado interno branco (moldura completa) -->
+  <rect x="16" y="16" width="90" height="96" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="1.2"/>
+
+  <!-- Monograma J & R -->
+  <text x="23"  y="89" class="mono-j">J</text>
+  <text x="57"  y="77" class="mono-amp">&amp;</text>
+  <text x="72"  y="89" class="mono-r">R</text>
+
+  <!-- ═══ TIPOGRAFIA DA MARCA ═══ -->
+  <g transform="translate(140, 26)">
+    <!-- JUNIO E RIBEIRO -->
     <text x="0" y="38" class="brand-title">JUNIO E RIBEIRO</text>
-    <!-- Subtítulo / Consultoria Jurídica (reduzido de 11px para 9px) -->
-    <text x="2" y="62" class="brand-sub">ADVOCACIA E CONSULTORIA JURÍDICA</text>
+    <!-- Linha dourada decorativa -->
+    <line x1="1" y1="46" x2="348" y2="46" stroke="#D4AC2A" stroke-width="0.7" opacity="0.5"/>
+    <!-- ADVOCACIA E CONSULTORIA JURÍDICA -->
+    <text x="0" y="58" class="brand-sub">ADVOCACIA E CONSULTORIA JURÍDICA</text>
   </g>
 </svg>
