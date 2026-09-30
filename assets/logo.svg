@@ -1,39 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 130" width="520" height="130">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 130" width="540" height="130">
   <defs>
     <style>
-      .mono-j   { font-family: 'Cormorant Garamond', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif; font-weight: 400; fill: #FFFFFF; font-size: 54px; }
-      .mono-amp { font-family: 'Cormorant Garamond', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif; font-weight: 400; fill: #FFFFFF; font-size: 24px; }
-      .mono-r   { font-family: 'Cormorant Garamond', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif; font-weight: 400; fill: #FFFFFF; font-size: 54px; }
-      .brand-title { font-family: 'Cinzel', 'Trajan Pro', 'Palatino Linotype', Georgia, serif; font-size: 19px; font-weight: 600; fill: #FFFFFF; letter-spacing: 3.5px; }
-      .brand-sub   { font-family: 'Cinzel', 'Trajan Pro', 'Palatino Linotype', Georgia, serif; font-size: 7px;  font-weight: 400; fill: rgba(220,210,190,0.9); letter-spacing: 2.5px; }
+      .jrJ  { font-family: 'Cinzel', 'Palatino Linotype', Georgia, serif; font-weight: 400; font-size: 52px; fill: #FFFFFF; }
+      .jrAmp{ font-family: 'Cinzel', 'Palatino Linotype', Georgia, serif; font-weight: 400; font-size: 22px; fill: #FFFFFF; }
+      .jrR  { font-family: 'Cinzel', 'Palatino Linotype', Georgia, serif; font-weight: 400; font-size: 52px; fill: #FFFFFF; }
+      .ttl  { font-family: 'Cinzel', 'Palatino Linotype', Georgia, serif; font-weight: 600; font-size: 19px; fill: #FFFFFF; letter-spacing: 4px; }
+      .sub  { font-family: 'Cinzel', 'Palatino Linotype', Georgia, serif; font-weight: 400; font-size: 7px;  fill: rgba(215,200,165,0.88); letter-spacing: 3px; }
     </style>
   </defs>
 
-  <!-- ═══ BLOCO DO MONOGRAMA ═══ -->
+  <!-- Fundo azul-marinho solido -->
+  <rect x="4" y="3" width="116" height="124" fill="#0B1630"/>
 
-  <!-- Fundo azul-marinho sólido no bloco inteiro (garante contraste em qualquer fundo) -->
-  <rect x="4" y="4" width="116" height="122" fill="#0B1630" rx="0"/>
+  <!-- Canto L dourado - superior esquerdo -->
+  <line x1="4"  y1="3"  x2="60"  y2="3"   stroke="#C9A030" stroke-width="1.8" stroke-linecap="square"/>
+  <line x1="4"  y1="3"  x2="4"   y2="66"  stroke="#C9A030" stroke-width="1.8" stroke-linecap="square"/>
+  <!-- Canto L dourado - inferior direito -->
+  <line x1="64" y1="127" x2="120" y2="127" stroke="#C9A030" stroke-width="1.8" stroke-linecap="square"/>
+  <line x1="120" y1="64" x2="120" y2="127" stroke="#C9A030" stroke-width="1.8" stroke-linecap="square"/>
 
-  <!-- Canto dourado L — superior esquerdo -->
-  <polyline points="6,38 6,6 44,6" stroke="#D4AC2A" stroke-width="2.5" fill="none" stroke-linecap="square"/>
-  <!-- Canto dourado L — inferior direito -->
-  <polyline points="80,121 118,121 118,83" stroke="#D4AC2A" stroke-width="2.5" fill="none" stroke-linecap="square"/>
+  <!-- Moldura interna quadrada borda azul-clara -->
+  <rect x="15" y="14" width="90" height="100" fill="none" stroke="rgba(160,185,220,0.55)" stroke-width="1.0"/>
 
-  <!-- Quadrado interno branco (moldura completa) -->
-  <rect x="16" y="16" width="90" height="96" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="1.2"/>
+  <!-- Monograma J &amp; R -->
+  <text x="22" y="88" class="jrJ">J</text>
+  <text x="62" y="79" class="jrAmp">&amp;</text>
+  <text x="75" y="88" class="jrR">R</text>
 
-  <!-- Monograma J & R -->
-  <text x="23"  y="89" class="mono-j">J</text>
-  <text x="57"  y="77" class="mono-amp">&amp;</text>
-  <text x="72"  y="89" class="mono-r">R</text>
-
-  <!-- ═══ TIPOGRAFIA DA MARCA ═══ -->
-  <g transform="translate(140, 26)">
-    <!-- JUNIO E RIBEIRO -->
-    <text x="0" y="38" class="brand-title">JUNIO E RIBEIRO</text>
-    <!-- Linha dourada decorativa -->
-    <line x1="1" y1="46" x2="348" y2="46" stroke="#D4AC2A" stroke-width="0.7" opacity="0.5"/>
-    <!-- ADVOCACIA E CONSULTORIA JURÍDICA -->
-    <text x="0" y="58" class="brand-sub">ADVOCACIA E CONSULTORIA JURÍDICA</text>
+  <!-- Tipografia da marca -->
+  <g transform="translate(148, 27)">
+    <text x="0" y="38" class="ttl">JUNIO E RIBEIRO</text>
+    <line x1="0" y1="46" x2="360" y2="46" stroke="#C9A030" stroke-width="0.7" opacity="0.45"/>
+    <text x="0" y="59" class="sub">ADVOCACIA E CONSULTORIA JURI&#769;DICA</text>
   </g>
 </svg>
