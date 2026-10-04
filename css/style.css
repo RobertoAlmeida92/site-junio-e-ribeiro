@@ -285,43 +285,12 @@ button {
 .header-logo {
   display: flex;
   align-items: center;
-  gap: 12px;
 }
 
-.header-logo img, .header-logo-icon {
-  height: 54px;
+/* Logo original (vetor extraído do Canva/J&R.pdf), sem recriar em HTML */
+.header-logo img {
+  height: 70px;
   width: auto;
-  object-fit: contain;
-}
-
-.header-logo-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 12px;
-  border-left: 1px solid rgba(201, 160, 63, 0.35);
-  line-height: 1.2;
-}
-
-.header-logo-name {
-  font-family: 'Cinzel', 'Palatino Linotype', Georgia, serif !important;
-  font-size: 11px !important;
-  font-weight: 600 !important;
-  letter-spacing: 0.20em !important;
-  color: #FFFFFF !important;
-  white-space: nowrap !important;
-  display: block !important;
-}
-
-.header-logo-sub {
-  font-family: 'Cinzel', 'Palatino Linotype', Georgia, serif !important;
-  font-size: 7px !important;
-  font-weight: 400 !important;
-  letter-spacing: 0.16em !important;
-  color: rgba(201, 180, 120, 0.75) !important;
-  white-space: nowrap !important;
-  margin-top: 3px !important;
-  display: block !important;
 }
 
 .nav-menu {
@@ -1590,7 +1559,7 @@ button {
 }
 
 .footer-brand img {
-  height: 60px;
+  height: 90px;
   width: auto;
   margin-bottom: 20px;
 }
@@ -1706,7 +1675,7 @@ button {
   }
   
   .header-logo img {
-    height: 44px;
+    height: 60px;
   }
 
   .nav-menu {
